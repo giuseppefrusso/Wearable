@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="samplingPeriod">200</integer>
+    <bool name="accelerometer">true</bool>
+    <bool name="orientation">true</bool>
+    <bool name="location">false</bool>
+
+    <string name="serverURI">ssl://58d869c3bddb4c8885c0f12f1b1801c8.s1.eu.hivemq.cloud:8883</string>
+    <string name="username">admin</string>
+    <string name="password">GiuseppeHiveMQ99</string>
+    <integer name="connectionTimeout">10</integer>
+    <string name="broadcastTopic">configuration</string>
+</resources>
