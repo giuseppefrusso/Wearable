@@ -12,7 +12,7 @@ public class OrientationHandler extends AbstractSensorHandler {
 
     @Override
     public Sensor registerListener() {
-        Sensor orientationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        Sensor orientationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
         if(orientationSensor != null)
             sensorManager.registerListener(sensorEventListener, orientationSensor,
                     SensorManager.SENSOR_DELAY_NORMAL);
