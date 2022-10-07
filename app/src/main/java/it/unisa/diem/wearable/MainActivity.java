@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         username = getString(R.string.username);
         password = getString(R.string.password);
         deviceID = UUID.randomUUID().toString();
+        ((TextView) findViewById(R.id.deviceTextView)).append(deviceID);
         mqttClient = new MQTTClient(this, getString(R.string.serverURI), deviceID);
         broadcastTopic = getString(R.string.broadcastTopic);
         mqttClientConnected = false;
@@ -121,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
     }
 
     @Override
